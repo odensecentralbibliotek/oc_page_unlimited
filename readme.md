@@ -1,0 +1,2 @@
+Due to a bug in drupal it is neccesary to enable the features modules before this module , to allow creation of taxonomies.
+Also it is supposed to create a field instance , but it doesent work either with features.
