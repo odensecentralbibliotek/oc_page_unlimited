@@ -18,24 +18,24 @@ function create_page_layout_terms()
     if($vocab)
     {
         $term1 = (object) array(
-         'name' => 'Standard',
+         'name' => 'Standard (3 kolonner)',
          'description' => '',
          'vid' => $vocab->vid,
         );
         $term2 = (object) array(
-         'name' => 'Med højre side menu',
+         'name' => 'Med højre sektion (2 kolonner)',
          'description' => '',
          'vid' => $vocab->vid,
         );
 
         $term3 = (object) array(
-         'name' => 'Med venstrer side menu',
+         'name' => 'Med venstre menu (2 kolonner)',
          'description' => '',
          'vid' => $vocab->vid,
         );
 
         $term4 = (object) array(
-         'name' => 'Uden side menu',
+         'name' => 'Uden venstre menu og højre sektion (1 kolonne)',
          'description' => '',
          'vid' => $vocab->vid,
         );
