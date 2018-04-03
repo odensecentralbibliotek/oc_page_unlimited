@@ -2,7 +2,7 @@
 
 function oc_page_unlimited_field_display_alter(&$display, $context)
 {
-    $term_no_side_meny = taxonomy_get_term_by_name("Uden side menu");
+    $term_no_side_meny = taxonomy_get_term_by_name("Uden venstre menu og højre sektion (1 kolonne)");
     $term = reset($term_no_side_meny);
     $termid = isset( $context["entity"]->field_side_layout['und'][0]['tid']) ? $context["entity"]->field_side_layout['und'][0]['tid'] : -1;
     $field_name = $context['field']['field_name'];

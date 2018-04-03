@@ -15,7 +15,7 @@ function oc_page_unlimited_feature_field_default_field_instances() {
     'bundle' => 'ding_page',
     'default_value' => array(
       0 => array(
-        'tid' => 5616,
+        'tid' => 5621,
       ),
     ),
     'deleted' => 0,
