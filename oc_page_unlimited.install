@@ -1,0 +1,48 @@
+<?php
+/**
+ * Implements hook_install().
+ */
+function oc_page_unlimited_install() {
+    create_page_layout_terms();
+}
+/**
+ * Implements hook_uninstall().
+ */
+function oc_page_unlimited_module_uninstall() {
+  $vocab = taxonomy_vocabulary_machine_name_load('page_layout');
+  taxonomy_vocabulary_delete($vocab->vid);
+}
+function create_page_layout_terms()
+{
+    $vocab = taxonomy_vocabulary_machine_name_load('page_layout');
+    if($vocab)
+    {
+        $term1 = (object) array(
+         'name' => 'Standard',
+         'description' => '',
+         'vid' => $vocab->vid,
+        );
+        $term2 = (object) array(
+         'name' => 'Med højre side menu',
+         'description' => '',
+         'vid' => $vocab->vid,
+        );
+
+        $term3 = (object) array(
+         'name' => 'Med venstrer side menu',
+         'description' => '',
+         'vid' => $vocab->vid,
+        );
+
+        $term4 = (object) array(
+         'name' => 'Uden side menu',
+         'description' => '',
+         'vid' => $vocab->vid,
+        );
+
+        taxonomy_term_save($term1);
+        taxonomy_term_save($term2);
+        taxonomy_term_save($term3);
+        taxonomy_term_save($term4);
+    }
+}

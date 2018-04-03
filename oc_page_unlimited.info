@@ -1,0 +1,5 @@
+name = oc page unlimited
+description = gør det muligt at ændre layout for ding_page
+core = 7.x
+package = oc
+dependencies[] = oc_page_unlimited_feature

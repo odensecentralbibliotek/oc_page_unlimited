@@ -1,0 +1,13 @@
+<?php
+
+function oc_page_unlimited_field_display_alter(&$display, $context)
+{
+    $term_no_side_meny = taxonomy_get_term_by_name("Uden side menu");
+    $term = reset($term_no_side_meny);
+    $termid = isset( $context["entity"]->field_side_layout['und'][0]['tid']) ? $context["entity"]->field_side_layout['und'][0]['tid'] : null;
+    $field_name = $context['field']['field_name'];
+    if(strcmp($field_name,"field_ding_page_title_image") == 0 && $termid == $term->tid)
+    {
+        $display['settings']['image_style'] = "page_layout_full_page";
+    }
+}

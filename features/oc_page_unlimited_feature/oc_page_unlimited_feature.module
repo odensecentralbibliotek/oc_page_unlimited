@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the oc_page_unlimited_feature feature.
+ */
+
+include_once 'oc_page_unlimited_feature.features.inc';
