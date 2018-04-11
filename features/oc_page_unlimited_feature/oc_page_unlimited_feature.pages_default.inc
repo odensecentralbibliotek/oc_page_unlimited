@@ -74,12 +74,12 @@ function oc_page_unlimited_feature_default_page_manager_handlers() {
             'field_side_layout' => array(
               'und' => array(
                 0 => array(
-                  'tid' => '5615',
+                  'tid' => '5622',
                 ),
               ),
             ),
             'field_side_layout_tid' => array(
-              0 => '5615',
+              0 => '5622',
             ),
           ),
           'context' => 'argument_entity_id:node_1',
@@ -950,12 +950,12 @@ side/nyt-fra-europe-direct',
             'field_side_layout' => array(
               'und' => array(
                 0 => array(
-                  'tid' => '5614',
+                  'tid' => '5623',
                 ),
               ),
             ),
             'field_side_layout_tid' => array(
-              0 => '5614',
+              0 => '5623',
             ),
           ),
           'context' => 'argument_entity_id:node_1',
